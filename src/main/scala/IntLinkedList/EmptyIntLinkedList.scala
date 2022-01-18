@@ -11,4 +11,8 @@ object EmptyIntLinkedList extends IntLinkedListTrait {
   override def filter(predicateFunction: Int => Boolean): IntLinkedListTrait = EmptyIntLinkedList
 
   override def map(transformFunction: Int => Int): IntLinkedListTrait = EmptyIntLinkedList
+
+  override def flatMap(transformFunction: Int => Int): IntLinkedListTrait = EmptyIntLinkedList
+
+  override def zipWith(list2: IntLinkedListTrait, zipperFunction: (Int, Int) => Int): IntLinkedListTrait = EmptyIntLinkedList
 }

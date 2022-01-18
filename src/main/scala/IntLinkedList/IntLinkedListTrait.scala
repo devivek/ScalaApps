@@ -11,4 +11,6 @@ trait IntLinkedListTrait{
 
   def filter(predicateFunction : Int => Boolean) : IntLinkedListTrait
   def map(transformFunction : Int => Int) : IntLinkedListTrait
+  def flatMap(transformFunction : Int => Int) : IntLinkedListTrait
+  def zipWith(list2 : IntLinkedListTrait, zipperFunction : (Int, Int) => Int):IntLinkedListTrait
 }
