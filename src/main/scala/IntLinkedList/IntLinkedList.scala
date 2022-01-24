@@ -23,4 +23,6 @@ class IntLinkedList (private val head : Int, private val tail : IntLinkedListTra
   override def zipWith(list2: IntLinkedListTrait, zipperFunction: (Int, Int) => Int): IntLinkedListTrait =
     if(list2.isEmpty) throw new RuntimeException("List provided doesn't has the same length upon which zipperFunction is applied")
     else new IntLinkedList(zipperFunction(head, list2.getHeadValue), tail.zipWith(list2.getTail, zipperFunction))
+
+
 }

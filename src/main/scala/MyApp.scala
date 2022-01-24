@@ -28,4 +28,6 @@ object MyApp extends App{
   println("flatMapped : " + flatMapped.toString)
   println("zipped : " + zipped.toString)
 
+
+
 }
